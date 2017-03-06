@@ -1,8 +1,10 @@
 ﻿package ru.job4j;
 
 /**
- * Calculate slass.
- * @author A. lichman
+ * Calculate.
+ *
+ * @author A. lichman (alexlich.htc@gmail.com)
+ * @version $Id$
  * @since 25.02.2017
  */
 
