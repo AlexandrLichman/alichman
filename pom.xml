@@ -17,7 +17,7 @@
 		<module>chapter_001</module>
 	</modules>
 
-	<dependencies>
+<dependencies>
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
