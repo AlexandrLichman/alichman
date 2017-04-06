@@ -11,7 +11,7 @@ package ru.job4j.max;
 public class Max {
 
 	/**
-	* метод сравнивает 2 числа и возвращает большое.
+	* method compares two numbers and return max.
 	* @param first first number
 	* @param second second number
 	* @return maximum
@@ -22,7 +22,7 @@ public class Max {
 	}
 
 	/**
-	* метод сравнивает 3 числа и возвращает большое.
+	* method compares three numbers and return max.
 	* @param first first number
 	* @param second second number
 	* @param third third number

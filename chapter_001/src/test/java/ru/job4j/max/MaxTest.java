@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * Test.
+ * MaxTest.
  *
  * @author A. lichman (alexlich.htc@gmail.com)
  * @version $Id$
@@ -19,7 +19,7 @@ public class MaxTest {
 */
 
 	@Test
-	public void findMax() {
+	public void whenMaxFromTwo() {
 		Max max = new Max();
 		int result = max.max(1, 8);
 		assertThat(result, is(8));
@@ -30,7 +30,7 @@ public class MaxTest {
 */
 
 	@Test
-	public void findMax() {
+	public void whenMaxFromThree() {
 		Max max = new Max();
 		int result = max.max(1, 8, 10);
 		assertThat(result, is(10));
