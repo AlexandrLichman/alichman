@@ -5,7 +5,7 @@ package ru.job4j.loop;
  *
  * @author A. lichman (alexlich.htc@gmail.com)
  * @version $Id$
- * @since 8.04.2017
+ * @since 11.04.2017
  */
 
 public class Counter {
