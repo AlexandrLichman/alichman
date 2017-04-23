@@ -18,7 +18,7 @@ public class BubbleSort {
 		int boof;
 
 		for (int i = 0; i < array.length; i++) {
-			for (int f = 0; f < array.length - 1; f++) {
+			for (int f = 0; f < array.length - i - 1; f++) {
 				if (array[f] > array[f + 1]) {
 					boof = array[f + 1];
 					array[f + 1] = array[f];
