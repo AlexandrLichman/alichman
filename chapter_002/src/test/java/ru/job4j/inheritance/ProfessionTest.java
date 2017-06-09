@@ -60,7 +60,7 @@ public class ProfessionTest {
     @Test
     public void checkTeacherMethodWorkOverride() {
         String[] start = {teach.work(engin), teach.work(teach), teach.work(doc)};
-        String[] result = {"Учитель Михаил  обучает студента Инженер Вадим", "Не могу учить себя", "Учитель Михаил  обучает студента Доктор Игнатий"};
+        String[] result = {"Учитель Михаил обучает студента Инженер Вадим", "Не могу учить себя", "Учитель Михаил обучает студента Доктор Игнатий"};
         assertThat(result, is(start));
     }
 

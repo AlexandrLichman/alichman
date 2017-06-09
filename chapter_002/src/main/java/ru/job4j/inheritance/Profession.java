@@ -125,6 +125,6 @@ public class Profession {
      * @return String field
      */
     public String workFinish(double workSchedule) {
-        return ("worked" + " " + workSchedule + " " + "hours" + " " + "out of" + " " + this.workSchedule);
+        return String.format("worked %,.2f hours out of %,.2f", workSchedule, this.workSchedule);
     }
 }

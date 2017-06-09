@@ -83,7 +83,7 @@ public class Doctor extends Profession {
      */
     @Override
     public String workShow(Profession obj) {
-        return (getNameProfession() + " " + getName() + " лечит " + obj.getNameProfession() + " " + obj.getName() + " от " + diagnosis);
+        return String.format("%s %s лечит %s %s от %s", getNameProfession(), getName(), obj.getNameProfession(), obj.getName(), diagnosis);
     }
 
     /**
@@ -97,7 +97,7 @@ public class Doctor extends Profession {
         String[] copyListOfPatients = new String[listOfPatients.length];
         int copyStudentsLength = copyListOfPatients.length;
         for (int index = 0; index < copyStudentsLength; index++) {
-            String st = (getNameProfession() + " " + getName() + " лечит пациента №" + (index + 1) + " " + listOfPatients[index] + " - " + "от " + diagnosis);
+            String st = String.format("%s %s лечит пациента №%d %s - от %s", getNameProfession(), getName(), (index + 1), listOfPatients[index], diagnosis);
             copyListOfPatients[index] = st;
         }
         return copyListOfPatients;

@@ -87,7 +87,7 @@ public class Engineer extends Profession {
         if (obj instanceof Engineer) {
             return "Не могу сдать проект себе";
         } else {
-            return ("Проект сдал " + getNameProfession() + " " + getName() + ". Принял проект " + obj.getNameProfession() + " " + obj.getName() + ".");
+            return String.format("Проект сдал %s %s. Принял проект %s %s.", getNameProfession(), getName(), obj.getNameProfession(), obj.getName());
         }
     }
 
@@ -105,15 +105,15 @@ public class Engineer extends Profession {
             calc++;
         }
         if (calc == 1) {
-            return "введена точка" + " оценка " + (structuralEvaluation * 3);
+            return String.format("введена точка оценка %d" + structuralEvaluation * 3);
         } else if (calc == 2) {
-            return "введен отрезок" + " оценка " + (structuralEvaluation * 2);
+            return String.format("введен отрезок оценка %d", structuralEvaluation * 2);
         } else if (calc == 3) {
-            return "введен треугольник" + " оценка " + (structuralEvaluation * 5);
+            return String.format("введен треугольник оценка %d", structuralEvaluation * 5);
         } else if (calc == 4) {
-            return "введен квадрат" + " оценка " + (structuralEvaluation * 1);
+            return String.format("введен квадрат оценка %d", structuralEvaluation * 1);
         } else {
-            return "нет данных" + " оценка " + (structuralEvaluation * 0);
+            return String.format("нет данных оценка %d", structuralEvaluation * 0);
         }
     }
 }

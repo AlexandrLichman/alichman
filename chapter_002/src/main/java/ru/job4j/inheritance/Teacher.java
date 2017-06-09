@@ -87,7 +87,7 @@ public class Teacher extends Profession {
         if (obj instanceof Teacher) {
             return "Не могу учить себя";
         } else {
-            return (getNameProfession() + " " + getName() + " " + " обучает студента " + obj.getNameProfession() + " " + obj.getName());
+            return String.format("%s %s обучает студента %s %s", getNameProfession(), getName(), obj.getNameProfession(), obj.getName());
         }
     }
 
@@ -102,7 +102,7 @@ public class Teacher extends Profession {
         String[] copyStudents = new String[students.length];
         int copyStudentsLength = copyStudents.length;
         for (int index = 0; index < copyStudentsLength; index++) {
-            String st = (getNameProfession() + " " + getName() + " обучает студента № " + (index + 1) + " " + students[index] + " - " + "получает отметку" + " " + (valuation + (index * 3)));
+            String st = String.format("%s %s обучает студента № %d %s - получает отметку %d", getNameProfession(), getName(), index + 1, students[index], (valuation + (index * 3)));
             copyStudents[index] = st;
         }
         return copyStudents;
