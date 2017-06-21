@@ -70,7 +70,7 @@ public class Profession {
         this.nameProfession = nameProfession;
     }
 
-            /**
+    /**
      * method returns nameProfession.
      *
      * @return nameProfession
@@ -107,7 +107,7 @@ public class Profession {
         return "Пусто";
     }
 
-        /**
+    /**
      * method returns String field.
      *
      * @param obj - initializes String field
